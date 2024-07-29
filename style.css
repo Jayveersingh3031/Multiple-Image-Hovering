@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.elem{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.elem img{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    transition: all linear 0.3s;
+    opacity: 0;
+    mix-blend-mode: difference;
+}
